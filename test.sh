@@ -1,4 +1,5 @@
-curl -X POST http://localhost:3000/messages?message="testeando"
+URL=$1
+curl -X POST $1/messages?message="testeando"
 echo ""
-curl http://localhost:3000/messages
+curl $1/messages
 echo ""

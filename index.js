@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
+const morgan = require('morgan');
 
+
+app.use(morgan('combined'));
 const APIKEY = "1234"
 const mensajes = [];
 
